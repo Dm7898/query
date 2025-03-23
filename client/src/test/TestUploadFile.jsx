@@ -30,7 +30,7 @@ function TestUploadFile() {
   };
 
   return (
-    <div className="my-6">
+    <div className="my-6 max-w-6xl mx-auto">
       <input
         type="file"
         id="fileUpload"
