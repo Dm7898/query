@@ -7,10 +7,10 @@ import TestDashboard from "./test/TestDashboard";
 function App() {
   return (
     <Routes>
-      <Route index element={<Dashboard />} />
+      <Route index element={<TestDashboard />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/test-dashboard" element={<TestDashboard />} />
+      <Route path="/test-dashboard" element={<Dashboard />} />
+      <Route path="/dashboard" element={<TestDashboard />} />
     </Routes>
   );
 }

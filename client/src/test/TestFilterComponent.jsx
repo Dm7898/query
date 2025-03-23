@@ -96,10 +96,11 @@ function TestFilterComponent() {
   );
 
   return (
-    <div className="max-w-5xl mx-auto p-6 bg-gray-100 rounded-lg shadow-md">
+    <div className="max-w-6xl mx-auto p-6 bg-gray-100 rounded-lg shadow-md">
       <h2 className="text-2xl font-bold text-gray-800 text-center mb-6">
         Filter Transactions
       </h2>
+      <h4 className="mb-1 font-semibold">Category</h4>
       <Dropdown
         label="Categories"
         options={categories}
@@ -107,6 +108,7 @@ function TestFilterComponent() {
         setSelected={setSelectedCategories}
         refEl={categoryRef}
       />
+      <h4 className="mb-1 font-semibold">Branch</h4>
       <Dropdown
         label="Branches"
         options={filters.branches}
@@ -114,6 +116,7 @@ function TestFilterComponent() {
         setSelected={setSelectedBranches}
         refEl={branchRef}
       />
+      <h4 className="mb-1 font-semibold">Supplier</h4>
       <Dropdown
         label="Suppliers"
         options={filters.suppliers}
