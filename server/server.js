@@ -37,4 +37,4 @@ connectDB().then(() => {
 });
 
 // Define Routes
-app.use("/api/suppliers", supplierRoutes);
+app.use("/api/suppliers", cors(), supplierRoutes);
