@@ -6,8 +6,13 @@ import supplierRoutes from "./routes/supplierRoutes.js";
 
 dotenv.config();
 const app = express();
-
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://query-1-c2fy.onrender.com",
+    methods: ["GET", "POST", "PUT", "DELETE"], // Optional: Specify allowed HTTP methods
+    credentials: true, // Optional: Allow cookies or authentication headers
+  })
+);
 app.use(express.json());
 
 const connectDB = async () => {

@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://query-pzf4.onrender.com",
   headers: { "Content-Type": "application/json" },
 });
